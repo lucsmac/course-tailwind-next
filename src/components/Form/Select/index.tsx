@@ -13,7 +13,7 @@ export function Select ({ children, placeholder, ...props }: SelectProps) {
   return (
     <SelectPrimitive.Root {...props}>
       <SelectPrimitive.Trigger
-        className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600"
+        className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600 focus:border-violet-300 focus:ring-4 focus:ring-violet-100"
       >
         <SelectPrimitive.Value
           className="text-black"
@@ -28,7 +28,7 @@ export function Select ({ children, placeholder, ...props }: SelectProps) {
         <SelectPrimitive.Content
           side="bottom"
           position="popper"
-          className="z-10 rounded-lg border border-zinc-200 bg-white w-[--radix-select-trigger-width] overflow-hidden shadow-sm"
+          className="z-10 rounded-lg border border-zinc-200 bg-white w-[--radix-select-trigger-width] overflow-hidden shadow-sm animate-slideDownAndFade"
           sideOffset={8}
         >
           <SelectPrimitive.Viewport>
