@@ -10,8 +10,6 @@ export function FileList() {
 
   })
 
-  console.log(files)
-
   return (
     <div className="mt-4 space-y-3" ref={parent}>
       {files.map((file) => {
