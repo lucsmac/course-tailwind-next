@@ -10,13 +10,13 @@ export function Profile() {
         alt=""
       />
       <div className="flex flex-1 flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Lucas Macedo
         </span>
         <span className="text-sm text-zinc-500 truncate">lucas@gmail.com</span>
       </div>
       <Button type="button" variant="ghost">
-        <LogOut className="w-5 h-5 text-zinc-500" />
+        <LogOut className="w-5 h-5 text-zinc-500 dark:text-zinc-400" />
       </Button>
     </div>
   )
